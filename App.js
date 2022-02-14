@@ -54,14 +54,18 @@ function check(){
     if (targetWordChoice.charAt(i-1) == rows[rowNums-1][i-1]){
       console.log("correct");
       document.getElementById("r" + rowNums + "b" + i).className = "box correct";
+      document.getElementById(rows[rowNums-1][i-1].toUpperCase()).className="key correct";
     }
     else if (targetWordChoice.includes(rows[rowNums-1][i-1])){
       console.log("almost");
       document.getElementById("r" + rowNums + "b" + i).className = "box almost";
+      document.getElementById(rows[rowNums-1][i-1].toUpperCase()).className="key almost";
     }
     else {
       console.log("wrong")
       document.getElementById("r" + rowNums + "b" + i).className = "box wrong";
+      console.log(rows[rowNums-1][i-1].toUpperCase());
+      document.getElementById(rows[rowNums-1][i-1].toUpperCase()).className="key wrong";
     }
   }
   return true;
