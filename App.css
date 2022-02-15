@@ -43,6 +43,13 @@
   font-weight: bold;
 }
 
+h5{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: white;
+}
+
 body{
   display: flex;
   flex-direction: column;
